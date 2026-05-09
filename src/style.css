@@ -1,0 +1,177 @@
+@import url('https://db.onlinewebfonts.com/c/7b95df21e3a9e43c5b6047ef3814ccf2?family=ARK-ES+Solid+Bold');
+
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0c;
+  color: #f3f4f6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.home {
+  height: 100vh;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+.cover:focus-visible {
+  outline: 2px solid #f3f4f6;
+  outline-offset: -4px;
+}
+
+.cover__bg {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.02);
+}
+
+.cover__overlay {
+  display: none;
+}
+
+.cover__content {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: end;
+  gap: 10px;
+  padding: 28px 18px;
+  text-align: left;
+}
+
+.cover__kicker {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.cover__title {
+  font-family: 'ARK-ES Solid Bold', system-ui, -apple-system, Segoe UI, Roboto,
+    sans-serif;
+  font-size: clamp(44px, 7vw, 80px);
+  line-height: 1.03;
+  letter-spacing: -0.02em;
+  font-weight: 520;
+}
+
+.cover__hint {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.cover__dots {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(243, 244, 246, 0.35);
+}
+
+.dot--active {
+  background: rgba(243, 244, 246, 0.95);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  background: rgba(11, 11, 12, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.topbar__home {
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.topbar__home:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.topbar__title {
+  font-family: 'ARK-ES Solid Bold', system-ui, -apple-system, Segoe UI, Roboto,
+    sans-serif;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 560;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.gallery {
+  padding: 10px;
+  column-gap: 10px;
+  columns: 3 280px;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    columns: 3 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery {
+    columns: 2 160px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery {
+    columns: 1 1px;
+  }
+}
+
+.tile {
+  margin: 0 0 10px;
+  break-inside: avoid;
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
