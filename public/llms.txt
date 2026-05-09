@@ -1,0 +1,15 @@
+Title: Forrest Tindall Photography
+Location: Boise, Idaho (Treasure Valley)
+Focus: Film street-style portraiture and film portraits
+
+Pages:
+- Home: /
+- Galleries: /#commercial, /#event, /#portrait
+- About: /#about
+- Contact: /#contact
+
+Summary:
+Forrest Tindall is a Boise-based film photographer specializing in film street-style portraiture and film portraits.
+
+Contact:
+Use the form on /#contact.
